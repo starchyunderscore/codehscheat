@@ -1,4 +1,8 @@
+## Things to keep in mind before submitting an answer:
+
 All files must be named `id.txt` where `id` is the name of the assignment passed through the below function (ex `9.1.6 Checkerboard, v1` => `392e312e3620436865636b6572626f6172642c207631.txt`)
+
+All files must be uploaded to the `answers` directory.
 
 ```javascript
 function toHex(s) {

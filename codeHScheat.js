@@ -27,7 +27,6 @@ function toHex(s) {
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 async function doAnswer(id, inputElement, BUTTON_ONE) {
-  alert("b");
   document.getElementsByClassName("ace_scroller")[0].click() // Select all so that the current answer is deleted
   inputElement.select();
   var text = await fetch("https://raw.githubusercontent.com/starchyunderscore/codehscheat/main/answers/"+id+".txt") // Fetch the answer, then convert it to text
@@ -68,7 +67,6 @@ window.addEventListener("load", (event) => {
   try{var BUTTON_ONE = document.getElementsByClassName("__abacus_button")[2];}catch{var BUTTON_ONE = undefined;} // "Submit + Continue" or "Next" button.
   try{var BUTTON_TWO = document.getElementById("done-button");}catch{var BUTTON_TWO = undefined;} // Done button on video pages
   try{var QUIZ_NAME = document.querySelector("h1.center").innerHTML;}catch{var QUIZ_NAME = undefined;}
-  alert("a")
   if(BUTTON_ONE.innerHTML == "Next") { // skip if it is an example
     BUTTON_ONE.click();
   } else if (BUTTON_ONE.innerHTML == "Submit + Continue") { // put code if it is an example

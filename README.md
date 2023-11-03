@@ -1,5 +1,6 @@
 # CodeHScheat
 [Install Violentmonkey](https://violentmonkey.github.io/get-it/)
+
 [Install userscript](https://github.com/starchyunderscore/codehscheat/raw/main/codeHScheat.user.js)
 
 ### What is it?

@@ -1,0 +1,8 @@
+a=[]
+for i in range(5):
+    a.append((int(input("point 1: ")),int(input("point 2: "))))
+print(a)
+for i in range(4):
+    x1,y1=a[i]
+    x2,y2=a[i+1]
+    print("Slope between "+str(a[i])+" and "+str([a[i+1]])+": "+str((y2-y1)/(x2-x1)))

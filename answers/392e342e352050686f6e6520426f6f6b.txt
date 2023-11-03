@@ -1,0 +1,10 @@
+book = {}
+while True:
+    temp = input("name? ")
+    if temp == "":
+        break
+    if temp in book:
+        print(book[temp])
+    else:
+        book[temp] = input("phone number: ")
+print(book)

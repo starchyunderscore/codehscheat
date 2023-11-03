@@ -2,7 +2,7 @@
 name: Request
 about: Ask for missing answers
 title: "[Request] <Assignment Name>"
-labels: ''
+labels: assignment request
 assignees: starchyunderscore
 
 ---

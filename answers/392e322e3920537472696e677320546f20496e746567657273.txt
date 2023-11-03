@@ -1,0 +1,11 @@
+def safe_int(e):
+    ret = []
+    for i in e:
+        try:
+            ret.append(int(i))
+        except ValueError:
+            ret.append(0)
+    return(ret)
+
+list_of_strings = ["a", "2", "7", "zebra"]
+print([i for i in safe_int(list_of_strings)])

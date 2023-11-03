@@ -1,3 +1,7 @@
+# CodeHScheat
+[Install Violentmonkey](https://violentmonkey.github.io/get-it/)
+[Install userscript](https://github.com/starchyunderscore/codehscheat/raw/main/codeHScheat.user.js)
+
 ### What is it?
 CodeHScheat is a userscript to automatically cheat on codehs.com
 ### How do I use it?

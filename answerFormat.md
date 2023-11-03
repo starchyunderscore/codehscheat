@@ -29,12 +29,11 @@ for i in range(5,8):
 print_board(finallist)
 ```
 
-For Quiz answers, the file should contain a string of numbers corresponding to the answers, where each number is the answer to a question, zero indexed. This file should have a trailing newline.
+For Quiz answers, the file should contain a string of numbers corresponding to the answers, where each number is the answer to a question, zero indexed.
 
 ex:
 ```
 02113
-
 ```
 
 Would correspond to

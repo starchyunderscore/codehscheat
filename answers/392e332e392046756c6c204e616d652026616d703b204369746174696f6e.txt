@@ -1,0 +1,4 @@
+x,y=input("first name: "),input("last name: ")
+print("full name: " + x + (" ") + y)
+x,y=y,x
+print("citation: " + x + (", ") + y)

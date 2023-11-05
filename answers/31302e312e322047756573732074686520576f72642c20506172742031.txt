@@ -1,0 +1,22 @@
+secret_word = "word"
+
+def get_guess():
+    while True:
+        temp = input("guess: ")
+        if type(temp) == str:
+            if len(temp) == 1:
+                if temp.islower():
+                    if temp in secret_word:
+                        print("that letter is in the secret word")
+                        break
+                    else:
+                        print("that letter is not in the secret word")
+                        break
+                else:
+                    print("letter must be lowercase")
+            else:
+                print("must be exactly one charachter")
+        else:
+            print("must be a letter")
+for i in range(10):
+    get_guess()

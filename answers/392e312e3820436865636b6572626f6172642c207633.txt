@@ -1,0 +1,8 @@
+def print_board(board):
+    for i in range(len(board)):
+        print(" ".join([str(x) for x in board[i]]))
+finallist=[[0,1]*4,[1,0]*4]*4
+finallist[3]=[0]*8
+finallist[4]=[0]*8
+if True:
+    print_board(finallist)

@@ -1,0 +1,34 @@
+# setup -------------------------------------------------------------
+secret_word = "words"
+dashes = ["- "]*len(secret_word)
+
+# functions ---------------------------------------------------------
+def get_guess(dashes):
+    while True:
+        temp = input("guess: ")
+        if type(temp) == str:
+            if len(temp) == 1:
+                if temp.islower():
+                    if temp in secret_word:
+                        print("that letter is in the secret word")
+                        update_dashes(temp)
+                        break
+                    else:
+                        print("that letter is not in the secret word")
+                        break
+                else:
+                    print("letter must be lowercase")
+            else:
+                print("must be exactly one charachter")
+        else:
+            print("must be a letter")
+
+def update_dashes(temp):
+    dashes[secret_word.find(temp)] = temp
+    
+
+
+# calling -----------------------------------------------------------
+for i in range(10):
+    print(dashes)
+    get_guess(dashes)

@@ -4,6 +4,8 @@
 
 [Install userscript](https://github.com/starchyunderscore/codehscheat/raw/main/codeHScheat.user.js)
 
+[Demo (YouTube)](https://youtu.be/pDKWikFDuv4)
+
 ### What is it?
 CodeHScheat is a userscript to automatically cheat on codehs.com
 ### How do I use it?

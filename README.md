@@ -4,7 +4,7 @@
 
 [Install userscript](https://github.com/starchyunderscore/codehscheat/raw/main/codeHScheat.user.js)
 
-<a href="https://youtu.be/pDKWikFDuv4" target="_blank">Demonstration Video ⤤</a>
+[Demonstration Video](https://youtu.be/pDKWikFDuv4)
 
 ### What is it?
 CodeHScheat is a userscript to automatically cheat on codehs.com

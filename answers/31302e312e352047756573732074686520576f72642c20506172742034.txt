@@ -1,0 +1,47 @@
+# functions ---------------------------------------------------------
+def choice(words):
+    return random.choice(words)
+def get_guess(dashes):
+    while True:
+        temp = input("guess: ")
+        if type(temp) == str:
+            if len(temp) == 1:
+                if temp.islower():
+                    if temp in secret_word:
+                        print("that letter is in the secret word")
+                        update_dashes(temp)
+                        return 0
+                        break
+                    else:
+                        print("that letter is not in the secret word")
+                        return -1
+                        break
+                else:
+                    print("letter must be lowercase")
+            else:
+                print("must be exactly one charachter")
+        else:
+            print("must be a letter")
+def update_dashes(temp):
+    dashes[secret_word.find(temp)] = temp
+# setup -------------------------------------------------------------
+import random
+words = ["word", "words", "codehs", "tracy", "guess"]
+secret_word = choice(words)
+dashes = ["-"]*len(secret_word)
+guesses_left = 10
+# calling -----------------------------------------------------------
+while True:
+    temp3 = ""
+    for i in range(len(secret_word)):
+        temp3 = temp3 + dashes[i]
+    print(temp3)
+    if "-" in dashes:
+        guesses_left = guesses_left + get_guess(dashes)
+        print(str(guesses_left) + " incorrect guesses left")
+    else:
+        print("You win! the word was: " + secret_word)
+        break
+    if guesses_left == 0:
+        print("You lose! the word was: " + secret_word)
+        break
